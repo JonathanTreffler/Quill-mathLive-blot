@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/TessyPowder/Quill-mathLive-blot/issues"
   },
-  "homepage": "https://github.com/TessyPowder/Quill-mathLive-blot#readme"
+  "homepage": "https://github.com/TessyPowder/Quill-mathLive-blot#readme",
+  "dependencies": {
+    "mathlive": "^0.54.1"
+  }
 }
