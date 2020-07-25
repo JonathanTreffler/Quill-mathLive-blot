@@ -1,0 +1,27 @@
+{
+  "name": "quill-mathlive-blot",
+  "version": "1.0.0",
+  "description": "A Blot/Extension for Quill.js to embed editable formulas with mathLive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TessyPowder/Quill-mathLive-blot.git"
+  },
+  "keywords": [
+    "quill",
+    "mathLive",
+    "formula",
+    "formulas",
+    "math",
+    "Blot"
+  ],
+  "author": "Jonathan Treffler",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/TessyPowder/Quill-mathLive-blot/issues"
+  },
+  "homepage": "https://github.com/TessyPowder/Quill-mathLive-blot#readme"
+}
