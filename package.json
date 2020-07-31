@@ -26,5 +26,8 @@
   "homepage": "https://github.com/TessyPowder/Quill-mathLive-blot#readme",
   "dependencies": {
     "mathlive": "^0.54.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0"
   }
 }
