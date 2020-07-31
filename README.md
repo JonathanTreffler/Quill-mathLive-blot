@@ -11,9 +11,9 @@
 A Blot/Extension for Quill.js to embed editable formulas with mathLive.
 
 ## Usage:
-```js
-// import Quill
+- import Quill
 
+```js
 import mathLiveBlot from "quill-mathlive-blot";
 mathLiveBlot.register(Quill);
 ```
