@@ -5,14 +5,14 @@ export default {
 		let BlockEmbed = Quill.import("blots/block/embed");
 
 		class MathLiveBlot extends BlockEmbed {
-		  static create(content) {
-		    let node = super.create();
+			static create(content) {
+				let node = super.create();
 
 				node.setAttribute("contenteditable", false);
 
 				let div = document.createElement("div");
 
-				$(node).append(div);
+				node.appendChild(div);
 				console.log(node);
 
 				this.MathLiveField = MathLive.makeMathField(div, {
@@ -48,8 +48,8 @@ export default {
 					node.MathLiveField.$focus();
 				});
 
-		    return node;
-		  }
+				return node;
+			}
 
 			static value(node) {
 				return node.MathLiveField.$latex();
