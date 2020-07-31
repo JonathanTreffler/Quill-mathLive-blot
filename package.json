@@ -4,7 +4,9 @@
   "description": "A Blot/Extension for Quill.js to embed editable formulas with mathLive",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js",
+    "lint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",
