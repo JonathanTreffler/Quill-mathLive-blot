@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TessyPowder/Quill-mathLive-blot.git"
+    "url": "git+https://github.com/JonathanTreffler/Quill-mathLive-blot.git"
   },
   "keywords": [
     "quill",
@@ -23,9 +23,9 @@
   "author": "Jonathan Treffler",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/TessyPowder/Quill-mathLive-blot/issues"
+    "url": "https://github.com/JonathanTreffler/Quill-mathLive-blot/issues"
   },
-  "homepage": "https://github.com/TessyPowder/Quill-mathLive-blot#readme",
+  "homepage": "https://github.com/JonathanTreffler/Quill-mathLive-blot#readme",
   "dependencies": {
     "mathlive": "^0.54.1",
     "quill": "^1.3.7"
