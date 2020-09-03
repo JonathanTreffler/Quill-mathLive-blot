@@ -1,4 +1,5 @@
 import mathLiveBlot from "quill-mathlive-blot";
+import "./style.css";
 
 var quill = new Quill('#editor-container', {
     modules: {
