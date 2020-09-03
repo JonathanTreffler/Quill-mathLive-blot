@@ -11,3 +11,11 @@ var quill = new Quill('#editor-container', {
     placeholder: 'Compose an epic...',
     theme: 'snow'
 });
+
+function insert() {
+    let selection = quill.getSelection();
+    console.log(selection);
+    quill.insertEmbed(selection.index, options.type, options.content);
+}
+
+document.getElementById("insert").addEventListener("click", insert);
