@@ -15,7 +15,7 @@ var quill = new Quill('#editor-container', {
 function insert() {
     let selection = quill.getSelection();
     console.log(selection);
-    quill.insertEmbed(selection.index, options.type, options.content);
+    quill.insertEmbed(selection.index, "mathLive", "x/y");
 }
 
 document.getElementById("insert").addEventListener("click", insert);
