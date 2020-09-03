@@ -12,6 +12,8 @@ var quill = new Quill('#editor-container', {
     theme: 'snow'
 });
 
+mathLiveBlot.register(Quill);
+
 function insert() {
     let selection = quill.getSelection();
     console.log(selection);
