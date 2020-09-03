@@ -21,8 +21,12 @@ jobs:
     - name: "Build static Website"
       run: npm run build
       working-directory: docs
+      
+    - name: "Copy html"
+      run: cp index.html dist/
+      working-directory: docs
 
-    - name: Deploy
+    - name: "Deploy"
       uses: JamesIves/github-pages-deploy-action@3.5.5
       with:
         BRANCH: docs
