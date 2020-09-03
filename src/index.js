@@ -61,5 +61,5 @@ export default {
 		MathLiveBlot.className = "mathLiveBlot";
 
 		Quill.register(MathLiveBlot);
-	}
+	},
 };
