@@ -10,10 +10,16 @@
 
 A Blot/Extension for Quill.js to embed editable formulas with mathLive.
 
+## Installation:
+```bash
+npm install quill-mathlive-blot
+```
+
 ## Usage:
 - import Quill
-
 ```js
 import mathLiveBlot from "quill-mathlive-blot";
 mathLiveBlot.register(Quill);
+
+... create a Quill Instance ...
 ```
