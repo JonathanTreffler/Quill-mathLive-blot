@@ -20,6 +20,4 @@ npm install quill-mathlive-blot
 ```js
 import mathLiveBlot from "quill-mathlive-blot";
 mathLiveBlot.register(Quill);
-
-... create a Quill Instance ...
 ```
