@@ -12,21 +12,23 @@
 		<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 		<style>
 			#editor-container {
-			height: 375px;
+				height: 375px;
 			}
 		</style>
 		<script>
-			var quill = new Quill('#editor-container', {
-			  modules: {
-			    toolbar: [
-			      [{ header: [1, 2, false] }],
-			      ['bold', 'italic', 'underline'],
-			      ['image', 'code-block']
-			    ]
-			  },
-			  placeholder: 'Compose an epic...',
-			  theme: 'snow'  // or 'bubble'
-			});
+			window.onload = function () {
+				var quill = new Quill('#editor-container', {
+				  modules: {
+				    toolbar: [
+				      [{ header: [1, 2, false] }],
+				      ['bold', 'italic', 'underline'],
+				      ['image', 'code-block']
+				    ]
+				  },
+				  placeholder: 'Compose an epic...',
+				  theme: 'snow'  // or 'bubble'
+				});
+			};
 		</script>
 	</head>
 	<body>
