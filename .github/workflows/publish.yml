@@ -13,10 +13,13 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm install
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.PUBLISH_NPM_TOKEN }}
+      - run: npm ci
+	working-directory: src/
+      - run: npm publish
+        working-directory: src/
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.PUBLISH_NPM_TOKEN}}
+
   publish-gpr:
     runs-on: ubuntu-latest
     steps:
@@ -27,7 +30,10 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@JonathanTreffler'
       - run: npm ci
+        working-directory: src/
       - run: echo registry=https://npm.pkg.github.com/@JonathanTreffler >> .npmrc
+	working-directory: src/
       - run: npm publish
+	working-directory: src/
         env:
           NODE_AUTH_TOKEN: ${{secrets.PUBLISH_GITHUB_TOKEN}}
