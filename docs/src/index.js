@@ -17,7 +17,7 @@ mathLiveBlot.register(Quill);
 function insert() {
     let selection = quill.getSelection();
     console.log(selection);
-    quill.insertEmbed(selection.index, "mathLive", "x/y");
+    quill.insertEmbed(selection.index, "mathLive", "x");
 }
 
 document.getElementById("insert").addEventListener("click", insert);
