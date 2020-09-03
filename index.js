@@ -15,7 +15,7 @@ export default {
 				node.appendChild(div);
 				console.log(node);
 
-				this.MathLiveField = MathLive.makeMathField(div, {
+				node.MathLiveField = MathLive.makeMathField(div, {
 					smartMode: true,
 					virtualKeyboardMode: "manual",
 					virtualKeyboardLayout: "qwertz",
