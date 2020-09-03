@@ -25,7 +25,7 @@ jobs:
     - name: "Copy files"
       run: |
         cp index.html dist/
-        cp fonts/ dist/
+        cp -r fonts/ dist/
       working-directory: docs
 
     - name: "Deploy"
