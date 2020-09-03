@@ -15,6 +15,7 @@ jobs:
           node-version: 12
       - run: npm ci
 	working-directory: src/
+      - run: cp LICENSE README.md src/
       - run: npm publish
         working-directory: src/
         env:
@@ -31,6 +32,7 @@ jobs:
           scope: '@JonathanTreffler'
       - run: npm ci
         working-directory: src/
+      - run: cp LICENSE README.md src/
       - run: echo registry=https://npm.pkg.github.com/@JonathanTreffler >> .npmrc
 	working-directory: src/
       - run: npm publish
