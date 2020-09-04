@@ -37,3 +37,5 @@ function insert() {
     quill.insertEmbed(selection.index, "mathLive", "");
 }
 ```
+
+## [Live Demo](https://jonathan-treffler.de/Quill-mathLive-blot/)
