@@ -1,3 +1,7 @@
+#container {
+	width: 70%;
+	margin:auto;
+}
 .mathLiveBlot {
 	background-color: lightgray;
 	word-wrap: normal !important;
