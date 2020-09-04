@@ -1,7 +1,7 @@
 import mathLiveBlot from "quill-mathlive-blot";
 import "./style.css";
 
-// Options can be modified before the initialisation.
+// MathLive options can be modified before the initialisation.
 // If changed later it only applies to mathLive Instances created after the change.
 mathLiveBlot.options.virtualKeyboardMode = "off";
 
