@@ -1,4 +1,4 @@
-name: Publish
+name: Publish Libary
 
 on:
   release:
