@@ -1,6 +1,34 @@
 import MathLive from "mathlive/dist/mathlive.js";
 
+let options = {
+	smartMode: true,
+	virtualKeyboardMode: "manual",
+	virtualKeyboardLayout: "qwertz",
+	virtualKeyboardTheme: "material",
+	virtualKeyboards: "all",
+	onContentDidChange: (mf) => {
+		const latex = mf.$text();
+		console.log(latex);
+	},
+	inlineShortcuts: {
+		"minus": "-",
+		"-": "-",
+		"plus": "+",
+		"/": "\\frac",
+		"super 1": "^1",
+		"super 2": "^2",
+		"super 3": "^3",
+		"super 4": "^4",
+		"super 5": "^5",
+		"super 6": "^6",
+		"super 7": "^7",
+		"super 8": "^8",
+		"super 9": "^8",
+	},
+}
+
 export default {
+	options: options,
 	register: function(Quill) {
 		let BlockEmbed = Quill.import("blots/block/embed");
 
@@ -15,32 +43,7 @@ export default {
 				node.appendChild(div);
 				console.log(node);
 
-				node.MathLiveField = MathLive.makeMathField(div, {
-					smartMode: true,
-					virtualKeyboardMode: "manual",
-					virtualKeyboardLayout: "qwertz",
-					virtualKeyboardTheme: "material",
-					virtualKeyboards: "all",
-					onContentDidChange: (mf) => {
-						const latex = mf.$text();
-						console.log(latex);
-					},
-					inlineShortcuts: {
-						"minus": "-",
-						"-": "-",
-						"plus": "+",
-						"/": "\\frac",
-						"super 1": "^1",
-						"super 2": "^2",
-						"super 3": "^3",
-						"super 4": "^4",
-						"super 5": "^5",
-						"super 6": "^6",
-						"super 7": "^7",
-						"super 8": "^8",
-						"super 9": "^8",
-					},
-				});
+				node.MathLiveField = MathLive.makeMathField(div, options);
 
 				node.MathLiveField.$latex(content);
 
