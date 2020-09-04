@@ -1,6 +1,6 @@
 {
   "name": "quill-mathlive-blot",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "A Blot/Extension for Quill.js to embed editable formulas with mathLive",
   "main": "index.js",
   "scripts": {
