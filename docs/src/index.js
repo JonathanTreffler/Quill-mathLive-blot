@@ -17,24 +17,13 @@ var quill = new Quill('#editor-container', {
 			}
 		}
 	},
-	placeholder: 'Compose an epic...',
+	placeholder: '',
 	theme: 'snow'
 });
 
 mathLiveBlot.register(Quill);
 
-/*var toolbar = quill.getModule('toolbar');
-toolbar.addHandler('mathLive', function() {
-	console.log('mathLive')
-});*/
-
-/*var mathLiveButton = document.querySelector('.ql-mathLive');
-mathLiveButton.addEventListener('click', insert);*/
-
 function insert() {
 	let selection = quill.getSelection();
-	console.log(selection);
 	quill.insertEmbed(selection.index, "mathLive", "x");
 }
-
-document.getElementById("insert").addEventListener("click", insert);
