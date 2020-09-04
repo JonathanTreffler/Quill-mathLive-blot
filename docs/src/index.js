@@ -6,7 +6,8 @@ var quill = new Quill('#editor-container', {
       toolbar: [
         [{ header: [1, 2, false] }],
         ['bold', 'italic', 'underline'],
-        ['image', 'code-block']
+        ['image', 'code-block'],
+        ['mathLive']
       ]
     },
     placeholder: 'Compose an epic...',
