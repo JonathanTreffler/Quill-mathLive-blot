@@ -19,5 +19,21 @@ npm install quill-mathlive-blot
 - import Quill
 ```js
 import mathLiveBlot from "quill-mathlive-blot";
+
+var quill = new Quill('#editor-container', {
+    modules: {
+      toolbar: [
+        ['bold', 'italic', 'underline'],
+      ]
+    },
+    placeholder: '',
+    theme: 'snow'
+});
+
 mathLiveBlot.register(Quill);
+
+function insert() {
+    let selection = quill.getSelection();
+    quill.insertEmbed(selection.index, "mathLive", "");
+}
 ```
