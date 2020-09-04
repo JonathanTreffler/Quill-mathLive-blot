@@ -51,4 +51,4 @@ function insert() {
 }
 ```
 
-## [Live Demo](https://jonathan-treffler.de/Quill-mathLive-blot/)
+### [Live Demo](https://jonathan-treffler.de/Quill-mathLive-blot/)
