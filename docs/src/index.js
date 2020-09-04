@@ -1,6 +1,10 @@
 import mathLiveBlot from "quill-mathlive-blot";
 import "./style.css";
 
+// Options can be modified before the initialisation.
+// If changed later it only applies to mathLive Instances created after the change.
+mathLiveBlot.options.virtualKeyboardMode = "off";
+
 var quill = new Quill('#editor-container', {
 	modules: {
 		toolbar: {
@@ -23,7 +27,10 @@ var quill = new Quill('#editor-container', {
 
 mathLiveBlot.register(Quill);
 
+// This function gets called by the quill toolbar handler.
+// It can also be called programmatically
 function insert() {
 	let selection = quill.getSelection();
+	// In this example a mathLive instance will start with the content "x"
 	quill.insertEmbed(selection.index, "mathLive", "x");
 }
