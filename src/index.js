@@ -25,7 +25,7 @@ let options = {
 		"super 8": "^8",
 		"super 9": "^8",
 	},
-}
+};
 
 export default {
 	options: options,
