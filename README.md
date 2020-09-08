@@ -51,4 +51,31 @@ function insert() {
 }
 ```
 
+## Configuration:
+Options can be set through the mathLiveBlot.options variable.
+
+The default values are:
+```
+smartMode: true,
+virtualKeyboardMode: "manual",
+virtualKeyboardLayout: "qwertz",
+virtualKeyboardTheme: "material",
+virtualKeyboards: "all",
+inlineShortcuts: {
+	"minus": "-",
+	"-": "-",
+	"plus": "+",
+	"/": "\\frac",
+	"super 1": "^1",
+	"super 2": "^2",
+	"super 3": "^3",
+	"super 4": "^4",
+	"super 5": "^5",
+	"super 6": "^6",
+	"super 7": "^7",
+	"super 8": "^8",
+	"super 9": "^8",
+},
+```
+
 ### [Demo](https://jonathan-treffler.de/Quill-mathLive-blot/)
