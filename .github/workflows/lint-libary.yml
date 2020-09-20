@@ -1,10 +1,10 @@
-name: Lint Libary
+name: Lint Library
 
 on: [push]
 
 jobs:
-  lint_core:
-    name: Lint Libary
+  lint_library:
+    name: Lint Library
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
