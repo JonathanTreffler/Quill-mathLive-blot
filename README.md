@@ -3,6 +3,7 @@
 [![npm](https://img.shields.io/npm/dt/quill-mathlive-blot?style=flat-square)](https://www.npmjs.com/package/quill-mathlive-blot)
 ![GitHub Lint Workflow Status](https://img.shields.io/github/workflow/status/JonathanTreffler/Quill-mathLive-blot/Lint?label=Lint&style=flat-square)
 ![GitHub CodeQL Workflow Status](https://img.shields.io/github/workflow/status/JonathanTreffler/Quill-mathLive-blot/CodeQL?label=CodeQL&style=flat-square)
+![GitHub Demo Deploy Workflow Status](https://img.shields.io/github/workflow/status/JonathanTreffler/Quill-mathLive-blot/Deploy%20Demo%20to%20GitHub%20Pages?label=Demo%20Deploy&style=flat-square)
 ![GitHub](https://img.shields.io/github/license/JonathanTreffler/Quill-mathLive-blot?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/JonathanTreffler/Quill-mathLive-blot?style=flat-square)
 [![Maintenance](https://img.shields.io/maintenance/yes/2020?style=flat-square)](https://github.com/JonathanTreffler/Quill-mathQuill-blot/commits/)
