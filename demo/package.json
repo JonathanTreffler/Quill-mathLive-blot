@@ -11,7 +11,7 @@
   "author": "Jonathan Treffler",
   "license": "GPL-3.0",
   "devDependencies": {
-    "@babel/core": "^7.14.6",
+    "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.7",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.0",
