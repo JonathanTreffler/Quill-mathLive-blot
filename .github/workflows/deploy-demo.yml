@@ -1,0 +1,39 @@
+name: Deploy Demo to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+
+    - name: "Install Dependencies"
+      run: npm install
+      working-directory: demo
+
+    - name: "Build static Website"
+      run: npm run build
+      working-directory: demo
+      
+    - name: "Copy files"
+      run: |
+        cp index.html dist/
+        cp -r fonts/ dist/
+      working-directory: demo
+
+    - name: "Deploy"
+      uses: JamesIves/github-pages-deploy-action@3.5.5
+      with:
+        BRANCH: demo
+        FOLDER: demo/dist/
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BASE_BRANCH: master
+        SINGLE_COMMIT: true
+        CLEAN: true
