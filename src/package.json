@@ -31,7 +31,7 @@
     "quill": "^1.3.7"
   },
   "devDependencies": {
-    "eslint": "^7.5.0",
+    "eslint": "^8.19.0",
     "eslint-config-jonathantreffler": "^1.3.0"
   }
 }
